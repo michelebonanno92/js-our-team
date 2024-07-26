@@ -78,17 +78,23 @@ const team = [
       image:  '  barbara-ramos-graphic-designer.jpg ',
         
     },
-
-
-
-
  ];
-console.log(team[0]) ;
-console.log(team[1]) ;
-console.log(team[2]) ;
-console.log(team[3]) ;
-console.log(team[4]) ;
-console.log(team[5]) ;
+
+console.log('team' , team , typeof team )
+// console.log(team[0]) ;
+// console.log(team[1]) ;
+// console.log(team[2]) ;
+// console.log(team[3]) ;
+// console.log(team[4]) ;
+// console.log(team[5]) ;
+
+
+for (let i = 0; i < team.length; i++ ) {
+  console.log(team.length[i]);
+}
+
+
+// teamList = document.getElementById('team-list');
 
 
 
