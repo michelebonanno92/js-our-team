@@ -36,7 +36,7 @@ const team = [
 
       name: ' Wayne Barnett',
       role: '	Founder & CEO	',
-      image:  ' wayne-barnett-founder-ceo.jpg	 ',
+      image: 'wayne-barnett-founder-ceo.jpg',
         
     },
 
@@ -44,7 +44,7 @@ const team = [
 
       name: ' Angela Caroll',
       role: '	Chief Editor	',
-      image:  '  angela-caroll-chief-editor.jpg	 ',
+      image: 'angela-caroll-chief-editor.jpg',
         
     },
 
@@ -52,7 +52,7 @@ const team = [
 
       name: ' Walter Gordon',
       role: '	Office Manager	',
-      image:  ' walter-gordon-office-manager.jpg ',
+      image: 'walter-gordon-office-manager.jpg',
         
     },
 
@@ -60,7 +60,7 @@ const team = [
 
       name: ' Angela Lopez',
       role: ' Developer ',
-      image:  '  scott-estrada-developer.jpg ',
+      image: 'scott-estrada-developer.jpg',
         
     },
 
@@ -68,7 +68,7 @@ const team = [
 
       name: ' Scott Estrada',
       role: '	Social Media Manager	',
-      image:  ' angela-lopez-social-media-manager.jpg ',
+      image: 'angela-lopez-social-media-manager.jpg',
         
     },
 
@@ -76,7 +76,7 @@ const team = [
 
       name: ' Barbara Ramos ',
       role: '	Graphic Designer ',
-      image:  '  barbara-ramos-graphic-designer.jpg ',
+      image: 'barbara-ramos-graphic-designer.jpg',
         
     },
  ];
@@ -105,13 +105,8 @@ for (let i = 0; i < team.length; i++ ) {
   teamContainer = document.getElementById('team-container');
 
   teamContainer.innerHTML += `
-<h1> 
-  Testo e li per ogni iterazone del ciclo  
-</h1>
-<h2> 
-  Testo e li per ogni iterazone del ciclo  
-</h2>
-  <ul>
+
+    <ul>
       <li>
         Name :  ${team[i].name}
       </li>
@@ -119,10 +114,13 @@ for (let i = 0; i < team.length; i++ ) {
         Role  :  ${team[i].role}
       </li>
       <li>
-        Image  :  ${team[i].image}
+        Image  : 
+        <div>
+          <img src="img/${team[i].image}">
+        </div>
       </li>
-  </ul>
-  `
+    </ul>
+    `
 
   // const totalInfo = ` ${team[i].name} - ${team[i]['role']} - ${team[i].image} ` ;
   // console.log('qua provaaaaaaaaaaaaaaaaa stampa in console su stessa riga codice ', totalInfo)
