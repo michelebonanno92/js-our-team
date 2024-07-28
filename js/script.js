@@ -108,24 +108,41 @@ for (let i = 0; i < team.length; i++ ) {
 
     <ul>
       <li>
-        Name :  ${team[i].name}
-      </li>
-      <li>
-        Role  :  ${team[i].role}
-      </li>
-      <li>
-        Image  : 
         <div>
           <img src="img/${team[i].image}">
         </div>
       </li>
+      <li>
+        <h2>
+          <strong>
+             ${team[i].name}
+          </strong>
+        </h2>
+      </li>
+      <li>
+        ${team[i].role}
+      </li>
     </ul>
+
     `
 
   // const totalInfo = ` ${team[i].name} - ${team[i]['role']} - ${team[i].image} ` ;
   // console.log('qua provaaaaaaaaaaaaaaaaa stampa in console su stessa riga codice ', totalInfo)
 }
 
+headerContainer = document.getElementById('header-container');
+
+headerContainer.innerHTML += `
+
+  <h1>  
+    OUR TEAM  
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et itaque expedita atque odit consectetur, officia sapiente, fugiat dolores nemo maiores aspernatur?
+  </p>
+
+
+`
 
 
 
