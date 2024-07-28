@@ -8,3 +8,19 @@ reset
     box-sizing: border-box;
  }
 
+ .team-container{
+   margin-top: 20px;
+   margin-left: 50px;
+ }
+
+ .team-container > *{
+   margin-top: 50px;
+  
+ }
+
+ li {
+  color: red;
+  font-size: 2rem;
+  /* list-style-type: none ; */
+ }
+

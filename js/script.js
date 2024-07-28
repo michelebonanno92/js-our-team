@@ -90,6 +90,10 @@ console.log('con questo console log stampiamo l\'array degli oggetti ' , team , 
 // console.log(team[5]) ;
 
 
+
+
+
+
 for (let i = 0; i < team.length; i++ ) {
   console.log('questo console log stampiamo attraverso il ciclo definito for tutti le chaive-valore insieme ',team[i]);
 
@@ -98,9 +102,32 @@ for (let i = 0; i < team.length; i++ ) {
   console.log('role',team[i].role)
   console.log('image',team[i].image)
 
-  const totalInfo = ` ${team[i].name} - ${team[i]['role']} - ${team[i].image} ` ;
-  console.log('qua provaaaaaaaaaaaaaaaaa stampa in console su stessa riga codice ', totalInfo)
+  teamContainer = document.getElementById('team-container');
+
+  teamContainer.innerHTML += `
+<h1> 
+  Testo e li per ogni iterazone del ciclo  
+</h1>
+<h2> 
+  Testo e li per ogni iterazone del ciclo  
+</h2>
+  <ul>
+      <li>
+        Name :  ${team[i].name}
+      </li>
+      <li>
+        Role  :  ${team[i].role}
+      </li>
+      <li>
+        Image  :  ${team[i].image}
+      </li>
+  </ul>
+  `
+
+  // const totalInfo = ` ${team[i].name} - ${team[i]['role']} - ${team[i].image} ` ;
+  // console.log('qua provaaaaaaaaaaaaaaaaa stampa in console su stessa riga codice ', totalInfo)
 }
+
 
 
 
