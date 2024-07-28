@@ -1,4 +1,4 @@
-/* 
+/*  ``
 Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 MILESTONE 0:
@@ -31,6 +31,7 @@ Barbara Ramos	Graphic Designer	    barbara-ramos-graphic-designer.jpg
 
 
 const team = [
+
     {
 
       name: ' Wayne Barnett',
@@ -80,8 +81,8 @@ const team = [
     },
  ];
 
-console.log('team' , team , typeof team )
-// console.log(team[0]) ;
+console.log('con questo console log stampiamo l\'array degli oggetti ' , team , typeof team )
+ // console.log(team[0]) ;
 // console.log(team[1]) ;
 // console.log(team[2]) ;
 // console.log(team[3]) ;
@@ -90,11 +91,22 @@ console.log('team' , team , typeof team )
 
 
 for (let i = 0; i < team.length; i++ ) {
-  console.log(team.length[i]);
+  console.log('questo console log stampiamo attraverso il ciclo definito for tutti le chaive-valore insieme ',team[i]);
+
+// questo invece stampa singolarmente la chiave con il valore corrispondente 
+  console.log('name',team[i].name)
+  console.log('role',team[i].role)
+  console.log('image',team[i].image)
+
+  const totalInfo = ` ${team[i].name} - ${team[i]['role']} - ${team[i].image} ` ;
+  console.log('qua provaaaaaaaaaaaaaaaaa stampa in console su stessa riga codice ', totalInfo)
 }
 
 
-// teamList = document.getElementById('team-list');
+
+
+
+
 
 
 
