@@ -58,7 +58,7 @@ const team = [
 
     {
 
-      name: ' Angela Lopez',
+      name: ' Scott Estrada',
       role: ' Developer ',
       image: 'scott-estrada-developer.jpg',
         
@@ -66,7 +66,7 @@ const team = [
 
     {
 
-      name: ' Scott Estrada',
+      name: ' Angela Lopez ',
       role: '	Social Media Manager	',
       image: 'angela-lopez-social-media-manager.jpg',
         
