@@ -95,7 +95,7 @@ console.log('con questo console log stampiamo l\'array degli oggetti ' , team , 
 
 
 for (let i = 0; i < team.length; i++ ) {
-  console.log('questo console log stampiamo attraverso il ciclo definito for tutti le chaive-valore insieme ',team[i]);
+  console.log('questo console log stampiamo attraverso il ciclo definito for tutti le chiave-valore insieme ',team[i]);
 
 // questo invece stampa singolarmente la chiave con il valore corrispondente 
   console.log('name',team[i].name)
